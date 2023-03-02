@@ -1,12 +1,16 @@
-import React, { useContext,useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GlobalContext } from '../../Context/GlobalState';
 import './form.scss';
 
 
 const Form = () => {
-  const { getAddBook, fullBooks} = useContext(GlobalContext);
+  const { getAddBook, fullBooks, getOverview } = useContext(GlobalContext);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    getOverview();
+  }, []);
 
   const dataHandler = (e) => {
     e.preventDefault();
@@ -20,7 +24,7 @@ const Form = () => {
     fullBooks[index].books.push(data);
 
     getAddBook(data);
-    
+
     window.scrollTo(0, 0);
     navigate('/home')
   };
@@ -28,8 +32,8 @@ const Form = () => {
   return (
     <div className='app'>
       <div className='form-container'>
-        <div><h2>Leave your opinion!</h2></div>
-        <div className='comments-container'>
+        <div><h2>Create a new Book!</h2></div>
+        <div className='create-container'>
           <form onSubmit={dataHandler}>
             <select name="list_name">
               {fullBooks.map((category, index) => {

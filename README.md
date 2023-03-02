@@ -18,21 +18,27 @@ Realizo un muestrario de los libros Bestsellers del mercado, utilizando una API 
 
   `npm install sass`
 
+- [Ant-Design](https://ant.design/): Extensión que utilizamos para realizar algunos diseños, e iconos.
+
+  `npm install antd`
+
 ## Trabajo realizado
 
-He realizado un Home el cual mostrara los primeros 5 mejores libros por cada categoría. Luego realice un componente listBooks el cual permitirá listar todos los libros por categorías.
+He realizado un Home el cual mostrara libros por cada categoría.
 Cada uno tiene su autor y un link que te lleva a Amazon para realizar la compra del producto si asi lo deseas.
-Por último el cliente tiene la posiblidad de envíar un formulario con su nombre, el nombre del libro y su opinión a cerca del libro que haya leído.
-He trabajado desde VSC. Para levantar la aplicación y trabajar en ella he hecho un `create vite@latest` en la carpeta del proyecto, y a posterori un `npm run dev`.
+Se realizó un formulario que permitirá agregar libros si así se desea. Al llenar este formulario y enviarlo, se redirige a Home para que se pueda ver el libro agregado.
+Por último se agregó un icono para poder eliminarse el libro que se desee.
+He trabajado desde VSC. Para crear la aplicación y trabajar en ella he hecho un `create vite@latest` en la carpeta del proyecto, y a posterori un `npm run dev`.
 He subido el proyecto a un repositorio de github realizando diferentes commits.
 
 ```
-https://github.com/laumd23/news-bestsellers-books
+https://github.com/laumd23/BestsellerBooks.git
 ```
 
-Para finalizar se nos pidió que guardaramos en contenido del formulario en el localStorage.
-
-
+Para final se realiza el despligue en Vercel
 
 ## Vista previa
-![](https://res.cloudinary.com/lauradohle/image/upload/v1676985290/proyecto-libreria/vista-previa_evoldh.png)
+
+![](https://res.cloudinary.com/lauradohle/image/upload/v1677751237/proyecto-libreria/Captura_de_pantalla-1_yycij4.png)
+
+![](https://res.cloudinary.com/lauradohle/image/upload/v1677751236/proyecto-libreria/Captura_de_pantalla-2_o9pl4i.png)

@@ -10,7 +10,6 @@
     width: 500px;
     max-width: 80%;
     background: #fff;
-    padding: 20px 30px;
     border-radius: 5px;
 
     h2 {
@@ -18,7 +17,7 @@
       font-size: 30px;
     }
 
-    .comments-container {
+    .create-container {
       padding: 20px 30px;
 
       form {
@@ -31,27 +30,30 @@
 
         label {
           color: $hover-color;
-          padding: 5px 0;
+          padding-top: 15px;
+          padding-bottom: 5px;
           font-weight: bold;
         }
-        input[type='text'], input[type='url'], select, 
+        input[type='text'], 
+        input[type='url'], 
+        select, 
         textarea {
-          padding: 10px;
+          padding: 7px;
           border: 1px solid #ccc;
           border-radius: 5px;
           background: $other-color;
+          width: 80%;
           &::placeholder {
             font-family: $main-font;
             color: rgb(67, 67, 67);
           }
         }
         textarea {
-          width: 80%;
           height: 80px;
           resize: none;
         }
         input[type='submit'] {
-
+          align-self: center;
           border: 0;
           border-radius: 5px;
           padding: 10px 15px;
