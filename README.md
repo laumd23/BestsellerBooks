@@ -35,9 +35,12 @@ He subido el proyecto a un repositorio de github realizando diferentes commits.
 https://github.com/laumd23/BestsellerBooks.git
 ```
 
-Para final se realiza el despligue en Vercel
+## Despliegue en Vercel
 
-## Vista previa
+[Aplicación web-Best Sellers Books](https://bestseller-books.vercel.app/)
+
+
+### Vista previa
 
 ![](https://res.cloudinary.com/lauradohle/image/upload/v1677751237/proyecto-libreria/Captura_de_pantalla-1_yycij4.png)
 
