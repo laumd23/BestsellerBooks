@@ -1,0 +1,102 @@
+@import '../../color-and-font.scss';
+
+.home-container {
+  font-family: $main-font;
+
+  .principal-title {
+    padding-top: 30px;
+    margin-top: 25px;
+
+    h1 {
+      font-size: 2.5em;
+      color: $other-color;
+      text-decoration: overline underline;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+}
+
+.book-container {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 250px;
+  border-radius: 10px;
+
+  h4 {
+    color: $link-color;
+    font-size: 16px;
+  }
+
+  img {
+    width: 215px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 50px -8px rgb(0 0 0 / 44%);
+    cursor: pointer;
+  }
+
+  .author-link-container {
+    padding: 10px 5px 5px;
+
+    .author {
+      font-size: 15px;
+      font-weight: bold;
+      color: $link-color;
+      padding: 8px 0;
+    }
+
+    a {
+      font-size: 15px;
+      padding: 10px;
+      color: $hover-color;
+      font-weight: $font-weight;
+    }
+  }
+}
+
+.list-all-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  flex-direction: column;
+  .lists-full-overview{
+    display: flex;
+    flex-direction: column;
+    .category-title{
+      display: flex;
+      justify-content: center;
+      color: $other-color;
+      font-family: $main-font;
+      padding-top: 25px;
+      h2{
+        padding: 5px;
+        width: max-content;
+        background-color: black;
+        border-radius: 10px;
+      }
+    }
+    .books-by-category{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary{
+  background-color: $hover-color;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-btn-primary:not(:disabled):hover {
+  color: #fff;
+  background-color: $hover-color;
+  border-color: $other-color;
+}
+
+.anticon >*{
+  color: $hover-color;
+}

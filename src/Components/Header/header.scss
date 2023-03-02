@@ -1,0 +1,64 @@
+@import '../../color-and-font.scss';
+
+.main-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	font-family: $main-font;
+	color: $main-color;
+	background: $main-color;
+	.header-wrapper {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 1em;
+		.main-logo {
+			float: left;
+      img{
+        width: 200px;
+      }
+		}
+		.main-menu {
+			float: right;
+			text-align: center;
+			li {
+				display: inline-block;
+				padding: 0.75em 1.875em;
+				a {
+					padding-bottom: 0.75em;
+					text-transform: uppercase;
+					color: $link-color;
+					font-size: 17px;
+					&:hover {
+						color: $hover-color;
+						border-bottom: 0.15em solid $hover-color;
+						transition: .1s;
+					}
+				}
+				&:last-child {padding: 0.75em 0;}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.main-header .header-wrapper {width: 97%;}
+	.main-logo{
+		width: 40%;
+		padding-bottom: 2px;
+		img{
+			content: url('/logo-responsive-2.png');
+			width: 30% !important;
+		}
+	}
+  .category-title{
+    h2{
+      font-size: 1.4em;
+    }
+  }
+	.main-header .header-wrapper .main-menu li {padding: 0.2em 0.3em;}
+	.main-header .header-wrapper .main-menu li:last-child,
+	.main-header .header-wrapper .main-menu li:nth-child(6) {padding: 0.2em 0.7em;}
+}

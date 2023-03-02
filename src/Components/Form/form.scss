@@ -1,0 +1,67 @@
+@import '../../color-and-font.scss';
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 30px 0;
+  font-family: $main-font;
+
+  .form-container {
+    width: 500px;
+    max-width: 80%;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+
+    h2 {
+      color: $hover-color;
+      font-size: 30px;
+    }
+
+    .comments-container {
+      padding: 20px 30px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: baseline;
+
+        label {
+          color: $hover-color;
+          padding: 5px 0;
+          font-weight: bold;
+        }
+        input[type='text'], input[type='url'], select, 
+        textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background: $other-color;
+          &::placeholder {
+            font-family: $main-font;
+            color: rgb(67, 67, 67);
+          }
+        }
+        textarea {
+          width: 80%;
+          height: 80px;
+          resize: none;
+        }
+        input[type='submit'] {
+
+          border: 0;
+          border-radius: 5px;
+          padding: 10px 15px;
+          margin: 10px 0;
+          background: $other-color;
+          color: $hover-color;
+          font-weight: bold;
+          font-family: $main-font;
+        }
+      }
+    }
+  }
+}
